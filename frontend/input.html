@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phishing Link Detector</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container" id="top-header"></div>
+    <nav class="nav nav-pills nav-justified" style="background-color: #252525">
+      <a class="nav-link" href="index.html">Main</a>
+      <a class="nav-link disabled" href="detail.html" id="detailsLink"
+        >Detail</a
+      >
+      <a class="nav-link active" aria-current="page" href="#">Input</a>
+    </nav>
+    <div class="content-main">
+      <div class="row">
+        <section class="text-container">
+          <div class="main-text bounce-top" style="color: #1e90ff">Boo! 👻</div>
+          <div class="heading-text">Worried About Suspicious Links?</div>
+          <div class="subtext">
+            Don't stress—just paste the link here. Let us check it for you so
+            you stay safe and confident online.
+          </div>
+          <form class="messageBox" method="post" action="/predict">
+            <input required="" placeholder="URL..." type="text" id="urlInput" />
+            <button id="sendButton" type="submit" disabled>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 664 663"
+              >
+                <path
+                  fill="none"
+                  d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+                ></path>
+                <path
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke-width="33.67"
+                  stroke="#6c6c6c"
+                  d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+                ></path>
+              </svg>
+            </button>
+          </form>
+          <div class="validator">
+            <ul class="requirement-list">
+              <li id="scheme" class="invalid">
+                <i class="fa-solid fa-circle"></i
+                ><span>Start with http:// or https:// </span>
+              </li>
+              <li id="pattern" class="invalid">
+                <i class="fa-solid fa-circle"></i><span>Input a valid URL</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-loader loader-blk">
+            <svg viewBox="22 22 44 44" class="multiColor-loader">
+              <circle
+                cx="44"
+                cy="44"
+                r="20.2"
+                fill="none"
+                stroke-width="3.6"
+                class="loader-circle loader-circle-animation"
+              ></circle>
+            </svg>
+          </div>
+        </section>
+        <div class="text-container" style="display: none">
+          <div class="main-text bounce-top" id="result"></div>
+          <div class="heading-text" id="description"></div>
+          <div class="subtext" id="subtext"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/input.js"></script>
+  </body>
+</html>

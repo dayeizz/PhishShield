@@ -1,0 +1,46 @@
+{
+    "message": "Report in JSON file",
+    "predicted_probability": {
+        "SCORE": 100,
+        "URL": "https://github.com/dayeizz/PhishShield",
+        "isGoogleSafePassed": true,
+        "isdomainActive": true,
+        "isSslCertified": true,
+        "isntBlacklisted": true,
+        "isntSusDomain": true,
+        "isntUnshorten": true,
+        "isntRedirected": true,
+        "isLegit": {
+            "score": 100,
+            "domain": "github.com"
+        },
+        "prediction": 0,
+        "probability": "2.21",
+        "age": "17 year(s) 7 month(s) 11 day(s)",
+        "ipAddress": "20.205.243.166",
+        "location": "Singapore, Central Singapore, Singapore",
+        "finalDomain": "github.com",
+        "whois": {
+            "Domain Name": "GITHUB.COM",
+            "Registrar": "MarkMonitor, Inc.",
+            "Registrar Url": "http://www.markmonitor.com",
+            "Reseller": null,
+            "Whois Server": "whois.markmonitor.com",
+            "Referral Url": null,
+            "Updated Date": "2024-09-07 09:16:32, 2024-09-07 09:16:33",
+            "Creation Date": "2007-10-09 18:20:50",
+            "Expiration Date": "2026-10-09 18:20:50, 2026-10-09 00:00:00",
+            "Name Servers": "DNS1.P08.NSONE.NET, DNS2.P08.NSONE.NET, DNS3.P08.NSONE.NET, DNS4.P08.NSONE.NET, NS-1283.AWSDNS-32.ORG, NS-1707.AWSDNS-21.CO.UK, NS-421.AWSDNS-52.COM, NS-520.AWSDNS-01.NET",
+            "Status": "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientTransferProhibited https://icann.org/epp#clientTransferProhibited, clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited, clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited), clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited), clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)",
+            "Emails": "abusecomplaints@markmonitor.com, whoisrequest@markmonitor.com",
+            "Dnssec": "unsigned",
+            "Name": null,
+            "Org": "GitHub, Inc.",
+            "Address": null,
+            "City": null,
+            "State": "CA",
+            "Registrant Postal Code": null,
+            "Country": "US"
+        }
+    }
+}

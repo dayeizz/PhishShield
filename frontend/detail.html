@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phishing Link Detector</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .table {
+        margin-bottom: 0 !important ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="top-header"></div>
+    <nav class="nav nav-pills nav-justified" style="background-color: #252525">
+      <a class="nav-link disabled" href="index.html" id="detailsLink">Main</a>
+      <a class="nav-link active" aria-current="page" href="#">Detail</a>
+      <a class="nav-link" href="input.html">Input</a>
+    </nav>
+    <div class="content-main">
+      <div class="main-text bounce-top" id="result"></div>
+      <div id="report">
+        <table id="resultTable">
+          <tbody>
+            <tr>
+              <th>ATTRIBUTE</th>
+              <th>VALUE</th>
+            </tr>
+            <tr>
+              <td><strong>URL</strong></td>
+              <td><span id="has_url"></span></td>
+            </tr>
+            <tr>
+              <td><strong>DOMAIN</strong></td>
+              <td><span id="has_domain"></span></td>
+            </tr>
+            <tr>
+              <td><strong>MODEL CONFIDENCE</strong></td>
+              <td><span id="model"></span></td>
+            </tr>
+            <tr>
+              <td><strong>IP ADDRESS</strong></td>
+              <td><span id="has_ip"></span></td>
+            </tr>
+            <tr>
+              <td><strong>LOCATION</strong></td>
+              <td><span id="location"></span></td>
+            </tr>
+            <tr>
+              <td><strong>SERVER NAME</strong></td>
+              <td><span id="NameServers"></span></td>
+            </tr>
+            <tr>
+              <td><strong>SIMILARITY DOMAIN</strong></td>
+              <td><span id="similarity_score"></span></td>
+            </tr>
+            <tr>
+              <td><strong>DOMAIN AGE</strong></td>
+              <td><span id="age"></span></td>
+            </tr>
+            <tr>
+              <td><strong>SSL CERTIFICATE</strong></td>
+              <td><span id="sll_cert"></span></td>
+            </tr>
+            <tr>
+              <td><strong>DNS BLACKLIST</strong></td>
+              <td><span id="dns_blacklist"></span></td>
+            </tr>
+            <tr>
+              <td><strong>GOOGLE WEBSAFE</strong></td>
+              <td><span id="Google_WebSafe"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/detail.js"></script>
+  </body>
+</html>
