@@ -33,12 +33,18 @@
       ],
       "js": [
         "js/jquery.min.js"
+      ],
+      "css": [
+        "css/app.css",
+        "css/bootstrap.min.css",
+        "css/style.css"
       ]
     }
   ],
   "background": [
-    "js/detail.js.js",
-    "js/index.js"
+    "js/detail.js",
+    "js/index.js",
+    "js/input/js"
   ]
    
 }
